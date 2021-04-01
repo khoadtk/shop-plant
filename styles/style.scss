@@ -1,10 +1,91 @@
 @import "variables";
+@import "base";
+@import "nav";
+@import "home";
+@import "service";
 @mixin center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .test{
-    color: $main--color;
+    color: $bg__dark;
     @include center();
+}
+.content{
+    height: 90rem;
+    .content__btn{
+        margin: 4rem auto 0;
+    }
+    .content__title{
+        margin-top: 2.4rem;
+        font-size: 1.8rem;
+        color: $btn__primary__dark;
+        text-align: center;
+    }
+    .content__desc{
+        margin-top: 4rem;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.6rem;
+        span{
+            display: block;
+        }
+    }
+    .content__bar{
+        margin-top: 10rem;
+        .content__bar--title{
+            font-size: 4rem;
+            color: $text__primaty__light;
+            text-align: center;
+        }
+        .content__bar--list{
+            margin: 4rem 6rem 0;
+            display: flex;
+            .content__bar--item{
+                background-image: url(asset/Background02.png);
+                background-size: 100% 100%;
+                margin: 0 2rem;
+                width: 25%;
+                position: relative;
+                height: 22.5rem;
+                border-radius: 13%;
+                .content__item--title{
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 0;
+                    color: $text__default__dark;
+                    padding: 2.4rem 0 0 2.4rem;
+                }
+                .content__item__count{
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 0 2.4rem 2.4rem;
+                    div{
+                        color: $text__default__dark;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                    img{
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                }
+            }
+            .content__bar--item:first-child{
+                margin-left: 0;
+            }
+            .content__bar--item:last-child{
+                margin-right: 0;
+            }
+            .content__bar--item:hover{
+                border-radius: 13%;
+                box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+            }
+        }
+    }
 }

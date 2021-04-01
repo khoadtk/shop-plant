@@ -1,0 +1,48 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.app {
+  width: 144rem;
+  margin: 0 auto;
+}
+
+.bg__img {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.btn__primary {
+  color: #ffffff;
+  background-color: #375739;
+  width: 26rem;
+  height: 6rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 2.5;
+}
+
+.btn__primary:hover {
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=base.css.map */

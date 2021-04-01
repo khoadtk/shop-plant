@@ -1,0 +1,25 @@
+    
+
+/* > PC low resolution 984px*/
+@media (min-width: 1024px) and (max-width: 1239px){
+    
+}
+    
+    /* Mobile & tablet  644px*/
+    
+@media (max-width:1023px){
+   
+}
+  /* tablet */
+    
+@media (max-width:1023px)and (min-width:740px) {
+    
+}
+
+    /* Mobile */
+    
+@media (max-width:739px) {
+    :root {
+        --max--width:450px;
+    }
+}
