@@ -6,6 +6,10 @@
     color: $text__default__dark;
     .nav__logo{
         margin-right: 4rem;
+        img{
+            width: 4rem;
+        }
+        
     }
     .nav__menu{
         display: flex;
@@ -14,5 +18,19 @@
         font-size: 2rem;
         font-weight: 500;
         line-height: 1.5;
+    }
+    .nav__item{
+        padding: 0 2rem;
+        &.nav__item--cart {
+            color:  rgba(0, 0, 0, 1);
+            background: #B7EAAF;
+            border-radius: 10px;
+        }
+    }
+    .nav__item:hover{
+        color:  rgba(0, 0, 0, 1);
+        background: #B7EAAF;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
     }
 }

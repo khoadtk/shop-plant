@@ -4,8 +4,9 @@
     padding-bottom: 7.5rem;
     display: flex;
     flex-direction: column;
-    
-    
+    &.show{
+        display: none;
+    }
     .home__title{
         margin: 0 47rem;
         font-size: 5rem;

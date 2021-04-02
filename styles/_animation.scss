@@ -1,0 +1,25 @@
+@keyframes lelftoright{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes showin{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@mixin animationLR {
+    animation-name: lelftoright;
+    animation-duration: 1s;
+}
+@mixin showin {
+    animation-name: showin;
+    animation-duration: 1s;
+}

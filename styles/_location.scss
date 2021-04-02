@@ -1,0 +1,116 @@
+@import "animation";
+.location{
+    position: absolute;
+    z-index: 99;
+    display: none;
+    .location__card{
+        @include animationLR();
+        position: relative;
+        margin: 0 42rem 0;
+        //background: rgba(33, 63, 54, 0.8);
+        //border: 1px solid rgba(255, 255, 255, 0.2);
+        //box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        border-radius: 1rem;
+        .location__card--logo{
+            @include animationLR();
+            animation-duration: 1.5s;
+            margin-top: 8rem;
+            img{
+                width: 6rem;
+            }
+        }
+        .location__card--title{
+            @include animationLR();
+            animation-duration: 2s;
+            margin-top: 2.4rem;
+            font-size: 5rem;
+            line-height: 1;
+            color: $text__primaty__dark;
+        }
+        .location__card--derc{
+            @include animationLR();
+            animation-duration: 2.5s;
+            font-size: 2rem;
+            font-weight: 500;
+            color: $text__default__dark;
+            margin: 1.6rem 10rem 0;
+            line-height: 1;
+            span{
+                display: block;
+                margin-top: 3rem;
+            }
+        }
+        .location__card--btn{
+            @include animationLR();
+            animation-duration: 3s;
+            margin: 4rem auto 11.4rem;
+            a{
+                padding: 1.7rem 5rem;
+            }
+        }
+    }
+    .bg__card{
+        @include animationLR();
+        position: absolute;
+        margin: 0 42rem 0;
+        width: 60rem;
+        height: 54.1rem;
+        background: rgba(33, 63, 54, 1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+        filter: blur(2px);
+        border-radius: 1rem;
+    }
+    .location__icon{
+        @include showin();
+            animation-duration: 4s;
+        top: 0;
+        left: 42rem;
+        position: absolute;
+        width: 60rem;
+        height: 54.1rem;
+        img:nth-child(1){
+            position: absolute;
+            bottom: -7rem;
+            left: 45%;
+        }
+        img:nth-child(2){
+            
+            position: absolute;
+            top: 50%;
+            left: -7rem;
+        }
+        img:nth-child(3){
+            animation-delay: 2s;
+            position: absolute;
+            top: -5rem;
+            left: 20%;
+        }
+        img:nth-child(4){
+            position: absolute;
+            top: -2rem;
+            left: 70%;
+        }
+        img:nth-child(5){
+            position: absolute;
+            bottom: 0;
+            right: -12rem;
+        }
+        img:nth-child(6){
+            position: absolute;
+            bottom: 0;
+            left: -12rem;
+        }
+        img:nth-child(7){
+            position: absolute;
+            top: 10rem;
+            right: -15rem;
+        }
+        img:nth-child(8){
+            position: absolute;
+            top: -2rem;
+            left: -12rem;
+        }
+    }
+}

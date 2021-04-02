@@ -26,8 +26,7 @@ a{
     text-decoration: none;
     color: unset;
 }
-
-.btn__primary{
+@mixin btn--primary {
     color: $text__default__dark;
     background-color: $btn__primary__light;
     width: 26rem;
@@ -38,7 +37,25 @@ a{
     font-size: 2.4rem;
     line-height: 2.5;
 }
+@mixin main__title {
+    font-size: 4rem;
+    line-height: 1;
+    color: $text__primaty__dark;
+    span{
+        background: $linear__color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: block;
+    }
+}
+.btn__primary{
+    @include btn--primary();
+}
 
+.btn__main{
+    @include btn--primary();
+    background-image: linear-gradient(to right,rgba(127, 202, 33, 0.8),rgba(16, 82, 0, 1));
+}
 .btn__primary:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
 }

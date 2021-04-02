@@ -1,0 +1,15 @@
+@import "service";
+@import "shop";
+@import "product";
+@import "location";
+.main{
+    position: relative;
+    height: 90rem;
+    padding-top: 10rem;
+    display: none;
+    .main_bottom{
+        
+        position: absolute;
+        bottom: 0;
+    }
+}

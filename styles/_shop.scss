@@ -1,0 +1,102 @@
+.shop{
+    position: absolute;
+    z-index: 99;
+    width: $max__width;
+    display: none;
+    .shop__left{
+        width: 50%;
+        margin-top: 6rem;
+        margin-left: 16rem;
+        .shop__title{
+            @include main__title();
+        }
+        .shop__title--time{
+            color: $text__primaty__dark;
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-top: 4rem;
+        }
+        .shop__derc{
+            margin-top: .4rem;
+            font-size: 2rem;
+            font-weight: 300;
+            width: 60%;
+            line-height: 1.3;
+            color: $text__default__dark;
+        }
+        .shop__btn{
+            margin-top: 2.4rem;
+        }
+        .shop__person{
+            margin-top: 2.4rem;
+            p{
+                color: $text__default__dark;
+                font-size: 1.4rem;
+                padding-bottom: .8rem  ;
+            }
+            a{
+                width: 8rem;
+                height: 8rem;
+                img{
+                    width: 8rem;
+                }
+            }
+        }
+    }
+    .shop__right{
+        width: 60%;
+        padding-top: 30rem;
+        .shop__bar{
+            height: 225px;
+            overflow: hidden;
+            .shop__bar--list{
+                display: flex;
+                flex-wrap: wrap;
+                .shop__bar--item{
+                    background-image: url(asset/Background02.png);
+                    background-size: 100% 100%;
+                    margin: 0 2rem;
+                    width: 30rem;
+                    position: relative;
+                    height: 22.5rem;
+                    border-radius: 13%;
+                    .content__item--title{
+                        font-size: 2rem;
+                        position: absolute;
+                        top: 0;
+                        color: $text__default__dark;
+                        padding: 2.4rem 0 0 2.4rem;
+                    }
+                    .content__item__count{
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 0 2.4rem 2.4rem;
+                        div{
+                            color: $text__default__dark;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                        }
+                        img{
+                            height: 3rem;
+                            width: 3rem;
+                        }
+                    }
+                }
+                .shop__bar--item:first-child{
+                    margin-left: 0;
+                }
+                .shop__bar--item:last-child{
+                    margin-right: 0;
+                }
+                .shop__bar--item:hover{
+                    border-radius: 13%;
+                    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
