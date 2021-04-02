@@ -6,6 +6,22 @@
         transform: translateX(0);
     }
 }
+@keyframes righttoleft{
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes bottomtotop{
+    0%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 
 @keyframes showin{
     0%{
@@ -15,11 +31,47 @@
         opacity: 1;
     }
 }
-@mixin animationLR {
+@keyframes showout{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@mixin animationlr {
     animation-name: lelftoright;
+    animation-duration: 1s;
+}
+@mixin animationrl {
+    animation-name: righttoleft;
+    animation-duration: 1s;
+}
+@mixin animationbt {
+    animation-name: rotateX;
     animation-duration: 1s;
 }
 @mixin showin {
     animation-name: showin;
     animation-duration: 1s;
+}
+
+@keyframes rotateX{
+    0% {
+        transform: rotate(-90deg);
+      }
+    
+      100% {
+        transform: rotate(0deg);
+      }
+}
+
+@keyframes rotateY{
+    0% {
+        transform: rotateY(-90deg);
+      }
+    
+      100% {
+        transform: rotateY(0deg);
+      }
 }

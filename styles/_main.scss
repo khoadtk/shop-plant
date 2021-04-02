@@ -8,8 +8,8 @@
     padding-top: 10rem;
     display: none;
     .main_bottom{
-        
         position: absolute;
-        bottom: 0;
+        bottom: 0;    
+        @include showin();
     }
 }

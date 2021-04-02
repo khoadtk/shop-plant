@@ -4,19 +4,26 @@
     width: $max__width;
     display: none;
     .shop__left{
+        @include animationlr();
         width: 50%;
         margin-top: 6rem;
         margin-left: 16rem;
         .shop__title{
+            @include animationlr();
+            animation-duration: 1.5s;
             @include main__title();
         }
         .shop__title--time{
+            @include animationlr();
+            animation-duration: 1.5s;
             color: $text__primaty__dark;
             font-size: 1.6rem;
             font-weight: 300;
             margin-top: 4rem;
         }
         .shop__derc{
+            @include animationlr();
+            animation-duration: 2s;
             margin-top: .4rem;
             font-size: 2rem;
             font-weight: 300;
@@ -25,9 +32,13 @@
             color: $text__default__dark;
         }
         .shop__btn{
+            @include animationlr();
+            animation-duration: 2.1s;
             margin-top: 2.4rem;
         }
         .shop__person{
+            @include animationlr();
+            animation-duration: 2.2s;
             margin-top: 2.4rem;
             p{
                 color: $text__default__dark;
@@ -44,6 +55,8 @@
         }
     }
     .shop__right{
+        @include showin();
+            animation-duration: 2.2s;
         width: 60%;
         padding-top: 30rem;
         .shop__bar{

@@ -4,10 +4,10 @@
     padding-bottom: 7.5rem;
     display: flex;
     flex-direction: column;
-    &.show{
-        display: none;
-    }
+    @include animationlr();
     .home__title{
+        @include animationlr();
+        animation-duration: 1.5s;
         margin: 0 47rem;
         font-size: 5rem;
         line-height: 1;
@@ -30,6 +30,8 @@
         }
     }
     .home__des{
+        @include animationlr();
+            animation-duration: 2s;
         margin: 4rem 47rem 0;
         color: $text__default__dark;
         font-size: 2.8rem;
@@ -38,6 +40,8 @@
         text-align: center;
     }
     .home__btn{
+        @include animationlr();
+        animation-duration: 2s;
         margin: 4rem 62rem;
         color: $text__default__dark;
         font-size: 1.5rem;
@@ -49,6 +53,8 @@
         background-color: rgba(0,0,0,0.8);
     }
     .home__bar{
+        @include animationlr();
+        animation-duration: 2s;
         margin: 9.5rem 54rem 0rem;
         display: flex;
         justify-content: space-between;

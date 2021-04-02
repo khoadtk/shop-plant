@@ -8,6 +8,7 @@
     div{
         width: 50%;
         .product__list{
+            @include animationbt();
             height: 473px;
             margin-top: 20rem;
             position: relative;
@@ -69,7 +70,8 @@
         .product__list::after{
             position: absolute;
             content: "";
-            
+            @include showin();
+            animation-duration: 2s;
             //background-color: rgba(33, 63, 54, 0.8);
             //@debug: rotate(-45deg);
             left: 4rem;
@@ -79,6 +81,8 @@
             border-width: 3.2rem 3.2rem;
         }
         .product__list::before{
+            @include showin();
+            animation-duration: 2s;
             
             position: absolute;
             content: "";

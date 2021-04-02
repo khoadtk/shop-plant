@@ -1,3 +1,4 @@
+@import "animation";
 @import "variables";
 *{
     font-family: 'Roboto', sans-serif;
@@ -13,14 +14,21 @@ html{
     position: relative;
     
 }
+body{
+    background-color: rgba(229, 229, 229, 1);
+}
 .app{
     width: $max__width;
     margin: 0 auto;
+    @include showin();
+    animation-duration: 1s;
     
 }
 .bg__img{
     background-position: top center;
     background-repeat: no-repeat;
+    @include showin();
+    animation-duration: 2s;
 }
 a{
     text-decoration: none;

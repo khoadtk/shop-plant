@@ -12,33 +12,33 @@
 <body> 
     <div class="app bg__img" style="background-image: url(asset/Background01.png);">
         <div class="nav">
-            <a href="">
-                <div class="nav__logo">
+            <a href="./index.html">
+                <div class="nav__logo" >
                     <img src="asset/Logo.png" alt="">
                 </div>
             </a>
             <div class="nav__menu">
-                <a href="">
-                    <div class="nav__item" id="nav__sv">
+                <a href="#">
+                    <div class="nav__item">
                         Service
                     </div>
                 </a>
-                <a href="">
+                <a href="#">
                     <div class="nav__item">
                         Blog
                     </div>
                 </a>
-                <a href="">
+                <a href="#" >
                     <div class="nav__item">
                         Shop
                     </div>
                 </a>
-                <a href="">
+                <a href="#">
                     <div class="nav__item">
                         Location
                     </div>
                 </a>
-                <a href="">
+                <a href="#">
                     <div class="nav__item nav__item--cart">
                         Check out (<span>0</span>)
                     </div>
@@ -88,7 +88,7 @@
                     <div class="shop__btn btn__main">Try for service</div>
                     <div class="shop__person">
                         <p>Gardener Info</p>
-                        <a href="">
+                        <a href="#" onclick="toProduct()">
                             <img src="asset/shop-icon.png" alt="">
                         </a>
                     </div>
@@ -225,8 +225,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__btn">
-                        <a href=""><img src="asset/product-cancle.png" alt=""></a>
+                    <div class="product__btn" onclick="showList()">
+                        <a href="#">
+                            <img src="asset/product-cancle.png" alt="">
+                        </a>
                     </div>
                 </div>
                 
@@ -267,7 +269,7 @@
                 
             </div>
             <div class="main_bottom">
-                <img src="asset/service__bottom.png" alt="">
+                <img class="main__bottom--img" src="asset/service__bottom.png" alt="">
             </div>
         </div>
         <div class="content"> 

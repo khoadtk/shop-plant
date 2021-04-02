@@ -1,5 +1,6 @@
 .service__card{
-    display: none  ;
+    @include showin();
+    display: block ;
     position: absolute;
     z-index: 99;
     width: 90rem;
@@ -8,15 +9,18 @@
     background-image: url(/asset/service__card.png);
     border-radius: 2%;
     .service__content{
+        @include showin();
         height: 100%;
         border-radius: 2%;
         background-image: linear-gradient(to bottom right, #213F36 , rgba(33, 63, 54, 0.2));;
         padding-top: 4rem;
         padding-left: 4rem;
         .service__content--title{
+            @include animationlr();
             @include main__title();
         }
         .service__content--derc{
+            @include animationlr();
             margin-top: 4rem;
             font-size: 2rem;
             font-weight: 300;
@@ -25,6 +29,7 @@
             color: $text__default__dark;
         }
         .service__content--btn{
+            @include animationlr();
             margin-top: 2.4rem;
         }
     }

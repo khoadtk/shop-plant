@@ -4,7 +4,7 @@
     z-index: 99;
     display: none;
     .location__card{
-        @include animationLR();
+        @include animationlr();
         position: relative;
         margin: 0 42rem 0;
         //background: rgba(33, 63, 54, 0.8);
@@ -13,7 +13,7 @@
         text-align: center;
         border-radius: 1rem;
         .location__card--logo{
-            @include animationLR();
+            @include animationlr();
             animation-duration: 1.5s;
             margin-top: 8rem;
             img{
@@ -21,7 +21,7 @@
             }
         }
         .location__card--title{
-            @include animationLR();
+            @include animationlr();
             animation-duration: 2s;
             margin-top: 2.4rem;
             font-size: 5rem;
@@ -29,7 +29,7 @@
             color: $text__primaty__dark;
         }
         .location__card--derc{
-            @include animationLR();
+            @include animationlr();
             animation-duration: 2.5s;
             font-size: 2rem;
             font-weight: 500;
@@ -42,7 +42,7 @@
             }
         }
         .location__card--btn{
-            @include animationLR();
+            @include animationlr();
             animation-duration: 3s;
             margin: 4rem auto 11.4rem;
             a{
@@ -51,7 +51,7 @@
         }
     }
     .bg__card{
-        @include animationLR();
+        @include animationlr();
         position: absolute;
         margin: 0 42rem 0;
         width: 60rem;
