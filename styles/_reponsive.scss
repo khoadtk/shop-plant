@@ -1,25 +1,41 @@
-    
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
 
-/* > PC low resolution 984px*/
-@media (min-width: 1024px) and (max-width: 1239px){
-    
-}
-    
-    /* Mobile & tablet  644px*/
-    
-@media (max-width:1023px){
-   
-}
-  /* tablet */
-    
-@media (max-width:1023px)and (min-width:740px) {
-    
-}
 
-    /* Mobile */
+/* > PC low resolution */
+@media (max-width: 1366px){
+   .app{
+       width: 120rem
+   }
+   .home{
+       width: 120rem
+
+   }
+   .main{
+    width: 120rem;
+
+    .main_bottom{
+        img{
+            width: 120rem;
+        }
+    }
+   }
+   .home{
+       width: 120rem
+
+   }
+   .home{
+       width: 120rem
+
+   }
+   .home{
+       width: 120rem
+
+   }
+};
+    
     
 @media (max-width:739px) {
-    :root {
-        --max--width:450px;
-    }
-}
+    
+    
+};

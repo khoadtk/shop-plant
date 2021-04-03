@@ -57,7 +57,12 @@
                         color: rgba(255, 255, 255, 0.8);;
                         line-height: 2.8;
                     }
-                }        
+                }       
+                .product__item--name:hover{
+                    img{
+                        cursor: pointer;
+                    }
+                } 
             }
             .product__item:last-child{
                 border-radius: 0 0 2rem 2rem;
@@ -119,10 +124,13 @@
         margin-left: 3rem;
         text-align: center;
         .product__content--title{
+            @include animationrl();
             width: 100%;
             @include main__title();
         }
         .product__content--derc{
+            @include animationrl();
+            animation-duration: 1.5s;
             margin-top: 4rem;
             font-size: 3.2rem;
             font-weight: 300;

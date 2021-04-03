@@ -1,12 +1,12 @@
 .content{
-    height: 90rem;
+    height: 70rem;
     .content__btn{
         margin: 4rem auto 0;
     }
     .content__title{
         margin-top: 2.4rem;
         font-size: 1.8rem;
-        color: $btn__primary__dark;
+        color: #8bbc83;
         text-align: center;
     }
     .content__desc{
@@ -26,11 +26,12 @@
             text-align: center;
         }
         .content__bar--list{
-            margin: 4rem 6rem 0;
+            width: 100%;
+            margin: 4rem 0 0;
             display: flex;
             .content__bar--item{
                 background-image: url(asset/Background02.png);
-                background-size: 100% 100%;
+                background-size: cover;
                 margin: 0 2rem;
                 width: 25%;
                 position: relative;
@@ -60,12 +61,6 @@
                         width: 3rem;
                     }
                 }
-            }
-            .content__bar--item:first-child{
-                margin-left: 0;
-            }
-            .content__bar--item:last-child{
-                margin-right: 0;
             }
             .content__bar--item:hover{
                 border-radius: 13%;

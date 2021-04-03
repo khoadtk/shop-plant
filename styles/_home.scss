@@ -1,10 +1,9 @@
 .home{
     width: $max__width;
-    margin-top: 16rem;
+    padding-top: 16rem;
     padding-bottom: 7.5rem;
     display: flex;
     flex-direction: column;
-    @include animationlr();
     .home__title{
         @include animationlr();
         animation-duration: 1.5s;
@@ -32,7 +31,8 @@
     .home__des{
         @include animationlr();
             animation-duration: 2s;
-        margin: 4rem 47rem 0;
+            width: 30%;
+        margin: 4rem auto 0;
         color: $text__default__dark;
         font-size: 2.8rem;
         font-weight: 300;
@@ -42,7 +42,8 @@
     .home__btn{
         @include animationlr();
         animation-duration: 2s;
-        margin: 4rem 62rem;
+        width: 15%;
+        margin: 4rem auto;
         color: $text__default__dark;
         font-size: 1.5rem;
         text-align: center;
@@ -51,15 +52,21 @@
         border: .1rem solid $text__default__dark;
         padding: 1.1rem 1.7rem;
         background-color: rgba(0,0,0,0.8);
+        cursor: pointer;
     }
     .home__bar{
         @include animationlr();
         animation-duration: 2s;
-        margin: 9.5rem 54rem 0rem;
+        width: 30%;
+        margin: 9.5rem auto 0rem;
         display: flex;
         justify-content: space-between;
         .homne__bar--item{
             height: 6rem;
+        }
+        .homne__bar--item:hover{
+            cursor: pointer;
+            transform: scale(1.1);
         }
     }
 }

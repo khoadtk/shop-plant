@@ -66,6 +66,10 @@
                 display: flex;
                 flex-wrap: wrap;
                 .shop__bar--item{
+                    @include showin();
+                    animation-duration: 0.5s;
+                    display: none;
+                    animation-duration: 3s;
                     background-image: url(asset/Background02.png);
                     background-size: 100% 100%;
                     margin: 0 2rem;
@@ -97,12 +101,6 @@
                             width: 3rem;
                         }
                     }
-                }
-                .shop__bar--item:first-child{
-                    margin-left: 0;
-                }
-                .shop__bar--item:last-child{
-                    margin-right: 0;
                 }
                 .shop__bar--item:hover{
                     border-radius: 13%;

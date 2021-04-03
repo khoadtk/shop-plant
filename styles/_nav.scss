@@ -1,7 +1,7 @@
 .nav{
-    max-width: $max__width;
+    width: 60%;
     display: flex;
-    margin: 0rem 38rem 0;
+    margin: 0 auto;
     padding-top: 3rem;
     color: $text__default__dark;
     .nav__logo{

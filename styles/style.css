@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-webkit-keyframes lelftoright {
   0% {
     -webkit-transform: translateX(-50%);
@@ -8,7 +9,6 @@
             transform: translateX(0);
   }
 }
-
 @keyframes lelftoright {
   0% {
     -webkit-transform: translateX(-50%);
@@ -200,6 +200,7 @@ a {
   text-align: center;
   font-size: 2.4rem;
   line-height: 2.5;
+  cursor: pointer;
 }
 
 .btn__main {
@@ -213,6 +214,7 @@ a {
   text-align: center;
   font-size: 2.4rem;
   line-height: 2.5;
+  cursor: pointer;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 202, 33, 0.8)), to(#105200));
   background-image: linear-gradient(to right, rgba(127, 202, 33, 0.8), #105200);
 }
@@ -223,11 +225,11 @@ a {
 }
 
 .nav {
-  max-width: 144rem;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0rem 38rem 0;
+  margin: 0 auto;
   padding-top: 3rem;
   color: #ffffff;
 }
@@ -275,7 +277,7 @@ a {
 
 .home {
   width: 144rem;
-  margin-top: 16rem;
+  padding-top: 16rem;
   padding-bottom: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,10 +286,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation-name: lelftoright;
-          animation-name: lelftoright;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 .home .home__title {
@@ -333,7 +331,8 @@ a {
           animation-duration: 1s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  margin: 4rem 47rem 0;
+  width: 30%;
+  margin: 4rem auto 0;
   color: #ffffff;
   font-size: 2.8rem;
   font-weight: 300;
@@ -348,7 +347,8 @@ a {
           animation-duration: 1s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  margin: 4rem 62rem;
+  width: 15%;
+  margin: 4rem auto;
   color: #ffffff;
   font-size: 1.5rem;
   text-align: center;
@@ -357,6 +357,7 @@ a {
   border: 0.1rem solid #ffffff;
   padding: 1.1rem 1.7rem;
   background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .home .home__bar {
@@ -366,7 +367,8 @@ a {
           animation-duration: 1s;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  margin: 9.5rem 54rem 0rem;
+  width: 30%;
+  margin: 9.5rem auto 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,6 +381,12 @@ a {
   height: 6rem;
 }
 
+.home .home__bar .homne__bar--item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .service__card {
   -webkit-animation-name: showin;
           animation-name: showin;
@@ -387,8 +395,8 @@ a {
   display: block;
   position: absolute;
   z-index: 99;
-  width: 90rem;
-  height: 60rem;
+  width: 62.5%;
+  height: 66.6%;
   margin: 0 27rem 0;
   background-image: url(/asset/service__card.png);
   border-radius: 2%;
@@ -571,6 +579,15 @@ a {
 }
 
 .shop .shop__right .shop__bar .shop__bar--list .shop__bar--item {
+  -webkit-animation-name: showin;
+          animation-name: showin;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  display: none;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   background-image: url(asset/Background02.png);
   background-size: 100% 100%;
   margin: 0 2rem;
@@ -612,14 +629,6 @@ a {
   width: 3rem;
 }
 
-.shop .shop__right .shop__bar .shop__bar--list .shop__bar--item:first-child {
-  margin-left: 0;
-}
-
-.shop .shop__right .shop__bar .shop__bar--list .shop__bar--item:last-child {
-  margin-right: 0;
-}
-
 .shop .shop__right .shop__bar .shop__bar--list .shop__bar--item:hover {
   border-radius: 13%;
   -webkit-box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
@@ -640,8 +649,8 @@ a {
 }
 
 .product div .product__list {
-  -webkit-animation-name: rotateX;
-          animation-name: rotateX;
+  -webkit-animation-name: rotateY;
+          animation-name: rotateY;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   height: 473px;
@@ -713,6 +722,10 @@ a {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 2.8;
+}
+
+.product div .product__list .product__item .product__item--name:hover img {
+  cursor: pointer;
 }
 
 .product div .product__list .product__item:last-child {
@@ -787,6 +800,10 @@ a {
 }
 
 .product .product__content .product__content--title {
+  -webkit-animation-name: righttoleft;
+          animation-name: righttoleft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   width: 100%;
   font-size: 4rem;
   line-height: 1;
@@ -802,6 +819,12 @@ a {
 }
 
 .product .product__content .product__content--derc {
+  -webkit-animation-name: righttoleft;
+          animation-name: righttoleft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   margin-top: 4rem;
   font-size: 3.2rem;
   font-weight: 300;
@@ -1043,6 +1066,7 @@ a {
 }
 
 .main {
+  width: 144rem;
   position: relative;
   height: 90rem;
   padding-top: 10rem;
@@ -1050,6 +1074,7 @@ a {
 }
 
 .main .main_bottom {
+  width: 100%;
   position: absolute;
   bottom: 0;
   -webkit-animation-name: showin;
@@ -1059,7 +1084,7 @@ a {
 }
 
 .content {
-  height: 90rem;
+  height: 70rem;
 }
 
 .content .content__btn {
@@ -1069,7 +1094,7 @@ a {
 .content .content__title {
   margin-top: 2.4rem;
   font-size: 1.8rem;
-  color: #B7EAAF;
+  color: #8bbc83;
   text-align: center;
 }
 
@@ -1095,7 +1120,8 @@ a {
 }
 
 .content .content__bar .content__bar--list {
-  margin: 4rem 6rem 0;
+  width: 100%;
+  margin: 4rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,7 +1129,7 @@ a {
 
 .content .content__bar .content__bar--list .content__bar--item {
   background-image: url(asset/Background02.png);
-  background-size: 100% 100%;
+  background-size: cover;
   margin: 0 2rem;
   width: 25%;
   position: relative;
@@ -1143,18 +1169,37 @@ a {
   width: 3rem;
 }
 
-.content .content__bar .content__bar--list .content__bar--item:first-child {
-  margin-left: 0;
-}
-
-.content .content__bar .content__bar--list .content__bar--item:last-child {
-  margin-right: 0;
-}
-
 .content .content__bar .content__bar--list .content__bar--item:hover {
   border-radius: 13%;
   -webkit-box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+/* > PC low resolution */
+@media (max-width: 1366px) {
+  .app {
+    width: 120rem;
+  }
+  .home {
+    width: 120rem;
+  }
+  .main {
+    width: 120rem;
+  }
+  .main .main_bottom img {
+    width: 120rem;
+  }
+  .home {
+    width: 120rem;
+  }
+  .home {
+    width: 120rem;
+  }
+  .home {
+    width: 120rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

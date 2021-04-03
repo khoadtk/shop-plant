@@ -200,6 +200,7 @@ a {
   text-align: center;
   font-size: 2.4rem;
   line-height: 2.5;
+  cursor: pointer;
 }
 
 .btn__main {
@@ -213,6 +214,7 @@ a {
   text-align: center;
   font-size: 2.4rem;
   line-height: 2.5;
+  cursor: pointer;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(127, 202, 33, 0.8)), to(#105200));
   background-image: linear-gradient(to right, rgba(127, 202, 33, 0.8), #105200);
 }
