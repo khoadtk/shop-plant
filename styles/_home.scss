@@ -1,12 +1,11 @@
 .home{
     width: $max__width;
+    margin-bottom: 15rem;
     padding-top: 16rem;
-    padding-bottom: 7.5rem;
+    padding-bottom: 11.5rem;
     display: flex;
     flex-direction: column;
     .home__title{
-        @include animationlr();
-        animation-duration: 1.5s;
         margin: 0 47rem;
         font-size: 5rem;
         line-height: 1;
@@ -22,41 +21,40 @@
             -webkit-text-fill-color: transparent;
         }
         span:nth-child(2){
-            color: $text__default__dark;
+            color: var(--text__dark);
         }
         span:last-child{
-            color: $text__primaty__dark;
+            color: var(--text__color);
         }
     }
     .home__des{
-        @include animationlr();
-            animation-duration: 2s;
             width: 30%;
         margin: 4rem auto 0;
-        color: $text__default__dark;
+        color: var(--text__dark);
         font-size: 2.8rem;
         font-weight: 300;
         line-height: 1.5;
         text-align: center;
     }
     .home__btn{
-        @include animationlr();
-        animation-duration: 2s;
         width: 15%;
         margin: 4rem auto;
-        color: $text__default__dark;
+        color: var(--text__dark);
         font-size: 1.5rem;
         text-align: center;
         text-transform: uppercase;
         border-radius: 3rem;
-        border: .1rem solid $text__default__dark;
+        border: .1rem solid var(--text__dark);
         padding: 1.1rem 1.7rem;
-        background-color: rgba(0,0,0,0.8);
+        background-color: var(--text__light);
         cursor: pointer;
     }
+    .home__btn:hover{
+        border: .1rem solid var(--text__dark);
+        background-color: var(--text__dark);
+        color: var(--text__light);
+    }
     .home__bar{
-        @include animationlr();
-        animation-duration: 2s;
         width: 30%;
         margin: 9.5rem auto 0rem;
         display: flex;

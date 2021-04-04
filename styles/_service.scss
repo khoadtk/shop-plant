@@ -26,7 +26,7 @@
             font-weight: 300;
             width: 50%;
             line-height: 1.3;
-            color: $text__default__dark;
+            color: var(--text__dark);
         }
         .service__content--btn{
             @include animationlr();

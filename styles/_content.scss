@@ -1,5 +1,5 @@
 .content{
-    height: 70rem;
+    height: 80rem;
     .content__btn{
         margin: 4rem auto 0;
     }
@@ -10,6 +10,7 @@
         text-align: center;
     }
     .content__desc{
+        color: var(--text__light);
         margin-top: 4rem;
         text-align: center;
         font-weight: 400;
@@ -21,8 +22,9 @@
     .content__bar{
         margin-top: 10rem;
         .content__bar--title{
+            line-height: 1;
             font-size: 4rem;
-            color: $text__primaty__light;
+            color: var(--text__primary);
             text-align: center;
         }
         .content__bar--list{
@@ -32,7 +34,7 @@
             .content__bar--item{
                 background-image: url(asset/Background02.png);
                 background-size: cover;
-                margin: 0 2rem;
+                margin: 2rem;
                 width: 25%;
                 position: relative;
                 height: 22.5rem;
@@ -41,7 +43,7 @@
                     font-size: 2rem;
                     position: absolute;
                     top: 0;
-                    color: $text__default__dark;
+                    color: var(--text__dark);
                     padding: 2.4rem 0 0 2.4rem;
                 }
                 .content__item__count{
@@ -52,7 +54,7 @@
                     width: 100%;
                     padding: 0 2.4rem 2.4rem;
                     div{
-                        color: $text__default__dark;
+                        color: var(--text__dark);
                         font-size: 1.5rem;
                         font-weight: bold;
                     }

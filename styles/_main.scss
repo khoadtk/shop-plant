@@ -13,5 +13,9 @@
         position: absolute;
         bottom: 0;    
         @include showin();
+        img{
+            position: absolute ;
+            bottom: 0;
+        }
     }
 }

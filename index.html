@@ -9,61 +9,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Shop Plant</title>
 </head>
-<body> 
-    <div class="app bg__img" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%), url(asset/Background01.png);">
+<body class=""> 
+    <div class="app bg__img" style="background-image: url(asset/Background01.png);">
         <div class="nav">
+            <div class="nav__menu--mobile">
+                <img src="asset/nav-menu.png" alt="" class="mobile--nav">
+                <img src="asset/dark.svg" alt="" class="mobile--dark">
+            </div>
             <a href="./index.html">
                 <div class="nav__logo" >
                     <img src="asset/Logo.png" alt="">
                 </div>
             </a>
-            <div class="nav__menu">
-                <a href="#">
-                    <div class="nav__item">
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#">
                         Service
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav__item">
+                    </a>
+                </li>   
+                <li class="nav__item">
+                    <a href="#">
                         Blog
-                    </div>
-                </a>
-                <a href="#" >
-                    <div class="nav__item">
+                    </a>
+                </li>   
+                <li class="nav__item">
+                    <a href="#">
                         Shop
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav__item">
+                    </a>
+                </li>   
+                <li class="nav__item">
+                    <a href="#">
                         Location
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="nav__item nav__item--cart">
+                    </a>
+                </li>   
+                <li class="nav__item nav__item--cart">
+                    <a href="#">
                         Check out (<span>0</span>)
-                    </div>
-                </a>
+                    </a>
+                </li>   
+            </ul>
+        </div>
+        <div class="home " >
+            <div class="play-on-scroll show--left">
+                <div class="home__title">
+                    <span >Let's fine</span><span>your love</span><span>plants.</span>
+                </div>
+                <div class="home__des">
+                    Add some corlor to your home, give it a little attention, the plant will accompany you quietly
+                </div>   
+                <div class="home__btn">
+                    Watch the video
+                </div>
+                <div class="home__bar">
+                    <img class="homne__bar--item" src="asset/home_bar.png" alt="">
+                    <img class="homne__bar--item" src="asset/home_bar1.png" alt="">
+                    <img class="homne__bar--item" src="asset/home_bar2.png" alt="">
+                    <img class="homne__bar--item" src="asset/home_bar3.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="home">
-            <div class="home__title">
-                <span>Let's fine</span><span>your love</span><span>plants.</span>
-            </div>
-            <div class="home__des">
-                Add some corlor to your home, give it a little attention, the plant will accompany you quietly
-            </div>   
-            <div class="home__btn">
-                Watch the video
-            </div>
-            <div class="home__bar">
-                <img class="homne__bar--item" src="asset/home_bar.png" alt="">
-                <img class="homne__bar--item" src="asset/home_bar1.png" alt="">
-                <img class="homne__bar--item" src="asset/home_bar2.png" alt="">
-                <img class="homne__bar--item" src="asset/home_bar3.png" alt="">
-            </div>
-        </div>
-        <div class="main">
-            <div class="service__card bg__img">
+        <div class="main" >
+            <div class="service__card bg__img" style="display: none;">
                 <div class="service__content">
                     <div class="service__content--title">
                         <h1> <span>Service for</span> home plants.</h1>
@@ -78,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="shop">
+            <div class="shop" >
                 <div class="shop__left">
                     <div class="shop__title">
                         <h1> <span>Service for</span> home plants.</h1>
@@ -128,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="product">
+            <div class="product" >
                 <div>
                     <div class="product__list">
                         <h3 class="product__list--title">Foliage for plants</h3>
@@ -272,52 +278,54 @@
                 <img class="main__bottom--img" src="asset/service__bottom.png" alt="">
             </div>
         </div>
-        <div class="content"> 
-            <div class="content__btn btn__primary">
-                <a href="#">
-                    Try for service
-                </a>
-            </div>
-            <div class="content__title">
-                get a beatiful home
-            </div>
-            <div class="content__desc">
-                <span>if you don't know what plants you can add to the space</span>
-                <span>We can provide you with selected plants</span>
-                <span>And configure your space</span>
-            </div>
-            <div class="content__bar">
-                <div class="content__bar--title">
-                    <h2>4 types of plants</h2>
+        <div class="content " > 
+            <div class="play-on-scroll show--left" style="display: block;">        
+                <div class="content__btn btn__primary">
+                    <a href="#" >
+                        Try for service
+                    </a>
                 </div>
-                <div class="content__bar--list">
-                    <div class="content__bar--item bg__img" style="background-image: url(asset/Background02.png);">
-                        
-                        <div class="content__item--title"><h3>Foliage</h3></div>
-                        <div class="content__item__count">
-                            <div>21 plan</div>
-                            <img src="asset/home_bar.png" alt="">
-                        </div>
+                <div class="content__title">
+                    get a beatiful home
+                </div>
+                <div class="content__desc">
+                    <span>if you don't know what plants you can add to the space</span>
+                    <span>We can provide you with selected plants</span>
+                    <span>And configure your space</span>
+                </div>
+                <div class="content__bar">
+                    <div class="content__bar--title">
+                        <h2>4 types of plants</h2>
                     </div>
-                    <div class="content__bar--item bg__img" style="background-image: url(asset/Background05.png);">
-                        <div class="content__item--title"><h3>Pucculent</h3></div>
-                        <div class="content__item__count">
-                            <div>21 plan</div>
-                            <img src="asset/home_bar1.png" alt="">
+                    <div class="content__bar--list">
+                        <div class="content__bar--item bg__img" style="background-image: url(asset/Background02.png);">
+                            
+                            <div class="content__item--title"><h3>Foliage</h3></div>
+                            <div class="content__item__count">
+                                <div>21 plan</div>
+                                <img src="asset/home_bar.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="content__bar--item bg__img" style="background-image: url(asset/Background06.png);">
-                        <div class="content__item--title"><h3>Flower</h3></div>
-                        <div class="content__item__count">
-                            <div>21 plan</div>
-                            <img src="asset/home_bar2.png" alt="">
+                        <div class="content__bar--item bg__img" style="background-image: url(asset/Background05.png);">
+                            <div class="content__item--title"><h3>Pucculent</h3></div>
+                            <div class="content__item__count">
+                                <div>21 plan</div>
+                                <img src="asset/home_bar1.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="content__bar--item bg__img" style="background-image: url(asset/Background03.png);">
-                        <div class="content__item--title"><h3>Fruit</h3></div>
-                        <div class="content__item__count">
-                            <div>21 plan</div>
-                            <img src="asset/home_bar3.png" alt="">
+                        <div class="content__bar--item bg__img" style="background-image: url(asset/Background06.png);">
+                            <div class="content__item--title"><h3>Flower</h3></div>
+                            <div class="content__item__count">
+                                <div>21 plan</div>
+                                <img src="asset/home_bar2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content__bar--item bg__img" style="background-image: url(asset/Background03.png);">
+                            <div class="content__item--title"><h3>Fruit</h3></div>
+                            <div class="content__item__count">
+                                <div>21 plan</div>
+                                <img src="asset/home_bar3.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>

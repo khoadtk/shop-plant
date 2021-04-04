@@ -144,6 +144,38 @@
   }
 }
 
+.show--left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.show--left.is--show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+:root {
+  --bg__color:#E7E8E6;
+  --text__color:#D2FFCB;
+  --btn__color:#375739;
+  --text__dark:rgba(255, 255, 255, 0.8);
+  --text__light:rgba(0, 0, 0, 0.8);
+  --text__primary:#355342;
+}
+
+.dark {
+  --bg__color:#213F36;
+  --text__color:#355342;
+  --btn__color:#375739;
+  --text__dark:rgba(0, 0, 0, 0.8);
+  --text__light:rgba(255, 255, 255, 0.8);
+  --text__primary:#D2FFCB;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -160,7 +192,7 @@ html {
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--bg__color);
 }
 
 .app {
@@ -190,8 +222,8 @@ a {
 }
 
 .btn__primary {
-  color: #ffffff;
-  background-color: #375739;
+  color: var(--text__dark);
+  background-color: var(--btn__color);
   width: 26rem;
   height: 6rem;
   border-radius: 4rem;
@@ -204,8 +236,8 @@ a {
 }
 
 .btn__main {
-  color: #ffffff;
-  background-color: #375739;
+  color: var(--text__dark);
+  background-color: var(--btn__color);
   width: 26rem;
   height: 6rem;
   border-radius: 4rem;

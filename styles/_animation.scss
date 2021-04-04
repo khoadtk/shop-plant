@@ -75,3 +75,13 @@
         transform: rotateY(0deg);
       }
 }
+
+
+.show--left{
+    transform: translateX(-50%);
+    transition: 1s ease-in-out;
+}
+.show--left.is--show{
+    transform: translateX(0);
+    transform: translateY(0);
+}

@@ -12,10 +12,9 @@ html{
     line-height: 1.6rem;
     scroll-behavior: smooth;
     position: relative;
-    
 }
 body{
-    background-color: rgba(229, 229, 229, 1);
+    background-color: var(--bg__color);
 }
 .app{
     width: $max__width;
@@ -35,8 +34,8 @@ a{
     color: unset;
 }
 @mixin btn--primary {
-    color: $text__default__dark;
-    background-color: $btn__primary__light;
+    color: var(--text__dark);
+    background-color: var(--btn__color);
     width: 26rem;
     height: 6rem;
     border-radius: 4rem;
@@ -49,7 +48,7 @@ a{
 @mixin main__title {
     font-size: 4rem;
     line-height: 1;
-    color: $text__primaty__dark;
+    color: var(--text__color);
     span{
         background: $linear__color;
         -webkit-background-clip: text;
@@ -61,10 +60,12 @@ a{
     @include btn--primary();
 }
 
+
 .btn__main{
     @include btn--primary();
     background-image: linear-gradient(to right,rgba(127, 202, 33, 0.8),rgba(16, 82, 0, 1));
 }
+
 .btn__primary:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
 }
