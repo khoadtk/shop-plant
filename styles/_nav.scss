@@ -4,13 +4,6 @@
     margin: 0 auto;
     padding-top: 3rem;
     color: var(--text__dark);
-    .nav__logo{
-        height: 4rem;
-        img{
-            width: 4rem;
-        }
-    }
-
     .nav__menu{
         list-style: none;
         justify-content: space-between;
@@ -19,12 +12,19 @@
         font-weight: 500;
         line-height: 1.5;
         display: flex;
+        z-index: 99;
         @include showin();
         .nav__item{
             line-height: 2;
+            padding:1rem 2.5rem;
             a{
                 width: 100%;
-                padding:1rem 2.5rem;
+                .nav__logo{
+                    height: 4rem;
+                    img{
+                        width: 4rem;
+                    }
+                }
             }
             &.nav__item--cart {
                 color:  rgba(0, 0, 0, 1);
@@ -38,12 +38,17 @@
             border-radius: 10px;
             transition: .5s ease-in-out;
         }
+        .nav__item:first-child:hover{
+            color:  none;
+            background: none;
+            border-radius: 0;
+            transition: .5s ease-in-out;
+        }
     }
     .nav__menu--mobile{
         padding: 2.4rem 1.6rem;
         display: none;
         justify-content: space-between;
-
     }
 
 }

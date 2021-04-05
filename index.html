@@ -9,19 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Shop Plant</title>
 </head>
-<body class=""> 
+<body onload="loadding()"> 
     <div class="app bg__img" style="background-image: url(asset/Background01.png);">
         <div class="nav">
             <div class="nav__menu--mobile">
                 <img src="asset/nav-menu.png" alt="" class="mobile--nav">
                 <img src="asset/dark.svg" alt="" class="mobile--dark">
             </div>
-            <a href="./index.html">
-                <div class="nav__logo" >
-                    <img src="asset/Logo.png" alt="">
-                </div>
-            </a>
             <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#" id="home">
+                        <div class="nav__logo" >
+                            <img src="asset/Logo.png" alt="">
+                        </div>
+                    </a>
+                </li>   
                 <li class="nav__item">
                     <a href="#">
                         Service
@@ -68,8 +70,8 @@
                 </div>
             </div>
         </div>
-        <div class="main" >
-            <div class="service__card bg__img" style="display: none;">
+        <div class="main">
+            <div class="service__card bg__img" >
                 <div class="service__content">
                     <div class="service__content--title">
                         <h1> <span>Service for</span> home plants.</h1>
@@ -248,9 +250,9 @@
                 </div>
                
             </div>
-            <div class="location">
-                <div class="bg__card"></div>
-                <div class="location__icon">
+            <div class="location" >
+                <div class="bg__card" ></div>
+                <div class="location__icon" >
                     <img src="asset/location_vt.png" alt="">
                     <img src="asset/location_vt1.png" alt="">
                     <img src="asset/location_vt2.png" alt="">

@@ -1,15 +1,13 @@
 @import "animation";
 .location{
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     display: none;
+    
     .location__card{
         @include animationlr();
         position: relative;
         margin: 0 42rem 0;
-        //background: rgba(33, 63, 54, 0.8);
-        //border: 1px solid rgba(255, 255, 255, 0.2);
-        //box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
         text-align: center;
         border-radius: 1rem;
         .location__card--logo{
@@ -53,9 +51,10 @@
     .bg__card{
         @include animationlr();
         position: absolute;
-        margin: 0 42rem 0;
-        width: 60rem;
-        height: 54.1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 41%;
+        height: 95%;
         background: rgba(33, 63, 54, 1);
         border: 1px solid rgba(255, 255, 255, 0.2);
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
@@ -64,19 +63,21 @@
     }
     .location__icon{
         @include showin();
-            animation-duration: 4s;
+        animation-duration: 4s;
         top: 0;
         left: 42rem;
         position: absolute;
-        width: 60rem;
-        height: 54.1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 41%;
+        height: 95%;
         img:nth-child(1){
+            width: 100%;
             position: absolute;
             bottom: -7rem;
             left: 45%;
         }
         img:nth-child(2){
-            
             position: absolute;
             top: 50%;
             left: -7rem;
