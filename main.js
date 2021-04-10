@@ -38,8 +38,8 @@ function toPage() {
         main.style.display = "block";
         service.style.display = "block";
         content.style.display = "none";
-        app.style.backgroundImage = "url(asset/Background02.png)";
-        bgBottom.src = "asset/service__bottom.png";
+        app.style.backgroundImage = "url(asset/Background02.jpg)";
+        bgBottom.src = "asset/service__bottom.jpg";
         if (window.innerWidth<739) {
             document.querySelector(".nav__menu").style.display="none";
             document.querySelector(".nav__menu--mobile").style.display="flex";
@@ -48,24 +48,24 @@ function toPage() {
         main.style.display = "block";
         shop.style.display = "flex";
         content.style.display = "none";
-        app.style.backgroundImage = "url(asset/Background07.png)";
-        bgBottom.src = "asset/service__bottom.png";
+        app.style.backgroundImage = "url(asset/Background07.jpg)";
+        bgBottom.src = "asset/service__bottom.jpg";
         if (window.innerWidth<739) {
             document.querySelector(".nav__menu").style.display="none";
             document.querySelector(".nav__menu--mobile").style.display="flex";
         }
     } else if (this.innerText === "Location") {
-        app.style.backgroundImage = "url(asset/Background08.png)";
+        app.style.backgroundImage = "url(asset/Background08.jpg)";
         main.style.display = "block";
         lci.style.display = "block";
-        bgBottom.src = "asset/service__bottom.png";
+        bgBottom.src = "asset/service__bottom.jpg";
         if (window.innerWidth<739) {
             document.querySelector(".nav__menu").style.display="none";
             document.querySelector(".nav__menu--mobile").style.display="flex";
         }
     } else {
         home.style.display = "block";
-        app.style.backgroundImage = "url(asset/Background01.png)";
+        app.style.backgroundImage = "url(asset/Background01.jpg)";
         content.style.display = "block";
         if (window.innerWidth<739) {
             document.querySelector(".nav__menu").style.display="none";
@@ -76,11 +76,11 @@ function toPage() {
 
 function toProduct() {
     arrMain.forEach((e) => (e.style.display = "none"));
-    app.style.backgroundImage = "url(asset/Background02.png)";
+    app.style.backgroundImage = "url(asset/Background02.jpg)";
     main.style.display = "block";
     product.style.display = "flex";
     content.style.display = "none";
-    bgBottom.src = "asset/service__bottom1.png";
+    bgBottom.src = "asset/service__bottom1.jpg";
     window.scrollTo(0, 0);
     console.log(bgBottom);
 }
